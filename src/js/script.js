@@ -198,7 +198,7 @@
           }
           const selector = '.' + paramId + '-' + optionId;
           const optionImages = thisProduct.imageWrapper.querySelectorAll(selector);
-          // console.log(optionImages);
+          
           if (optionSelected) {
             for (let optionImage of optionImages) {
               optionImage.classList.add(classNames.menuProduct.imageVisible);

@@ -60,7 +60,7 @@ class Product {
 
     /* START: click event listener to trigger */
   
-    thisProduct.accordionTrigger.addEventListener('click', function (event) {
+    thisProduct.accordionTrigger.addEventListener('click', function(event) {
   
       /* prevent default action for event */
       event.preventDefault();
@@ -99,7 +99,7 @@ class Product {
     });
       
     for (let input of thisProduct.formInputs) {
-      input.addEventListener('change', function () {
+      input.addEventListener('change', function() {
         thisProduct.processOrder();
       });
     }
@@ -198,7 +198,7 @@ class Product {
     thisProduct.amount = thisProduct.amountWidget.value;
     //app.cart.add(thisProduct);
 
-    const event = new CustomEvent('add-to-card', {
+    const event = new CustomEvent('add-to-cart', {
       bubbles: true,
       detail: {
         product: thisProduct,

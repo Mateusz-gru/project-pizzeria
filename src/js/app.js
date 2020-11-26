@@ -1,12 +1,14 @@
 import {settings, select, classNames} from './settings.js';
 import Product from './components/Product.js';
 import Cart from './components/Cart.js';
+import Booking from './components/Booking.js';
 
 const app = {
   initPages: function () {
     const thisApp = this;
 
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
+
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
 
     const idFromHash = window.location.hash.replace('#/', '');
@@ -58,6 +60,15 @@ const app = {
         link.getAttribute('href') == '#' + pageId
       );
     }
+
+  },
+
+  initBooking: function(){
+    const thisApp = this;
+
+    thisApp.bookingWrapper = document.querySelector(select.containerOf.booking);
+    thisApp.booking = new Booking(thisApp.bookingWrapper);
+
 
   },
 
@@ -120,8 +131,11 @@ const app = {
     thisApp.initData();
       
     thisApp.initCart(); 
+
+    thisApp.initBooking();
   },
 };
 
 app.init();
 
+export default app;

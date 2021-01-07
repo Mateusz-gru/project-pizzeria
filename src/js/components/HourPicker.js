@@ -28,6 +28,9 @@ export class HourPicker extends BaseWidget {
       thisWidget.value = thisWidget.dom.input.value;
     });
 
+    
+    thisWidget.dom.input.value = this.parseValue(thisWidget.dom.input.value);
+
 
   }
 

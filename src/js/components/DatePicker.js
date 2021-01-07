@@ -28,14 +28,19 @@ export class DatePicker extends BaseWidget {
       },
       disable: [
         function(date) {
-          return (date.getDay() === 2);
+          return (date.getDay() === 6);
         }
       ],
       onChange: function(selectedDates, dateStr){
+        debugger
         thisWidget.value = dateStr;
 
       }
     });
+  }
+
+  parseValue(value) {
+    return value;
   }
 
 }

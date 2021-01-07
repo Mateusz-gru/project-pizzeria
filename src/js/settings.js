@@ -63,6 +63,11 @@ export const select = {
     peopleAmount: '.people-amount',
     hoursAmount: '.hours-amount',
     tables: '.floor-plan .table',
+    phone: '.order-confirmation .tel',
+    email: '.order-confirmation .text',
+    bookTable: '.order-confirmation button',
+    starters: '[name="starter"]',
+    tableChosen: '.table.chosen',
   },
   nav: {
     links: '.main-nav a',
@@ -80,6 +85,7 @@ export const classNames = {
   booking: {
     loading: 'loading',
     tableBooked: 'booked',
+    tableChosen: 'chosen',
   },
   nav: {
     active: 'active',
@@ -100,7 +106,7 @@ export const settings = {
     defaultMax: 9,
   },
   datePicker: {
-    maxDaysInFuture: 14,
+    maxDaysInFuture: 140,
   },
   cart: {
     defaultDeliveryFee: 20,

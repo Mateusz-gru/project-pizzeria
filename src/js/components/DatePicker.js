@@ -32,7 +32,7 @@ export class DatePicker extends BaseWidget {
         }
       ],
       onChange: function(selectedDates, dateStr){
-        debugger
+        
         thisWidget.value = dateStr;
 
       }
@@ -41,6 +41,9 @@ export class DatePicker extends BaseWidget {
 
   parseValue(value) {
     return value;
+  }
+
+  renderValue() {
   }
 
 }

@@ -1,0 +1,219 @@
+.home-wrapper {
+    margin: 42px auto;
+    padding: 72px 48px;
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    border-radius: 4px;
+  }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+.link-wrapper {
+    width: 100%;
+    height: 119px;
+    border-style: solid;
+    border-color: white;
+    border-radius: $radius;
+    text-align: center;
+    background-size: cover;
+  }
+.order-link{
+    background-image: url(../../images/home/pizza-1.jpg);
+    flex: 0 0 50%;
+}
+.booking-link{
+    background-image: url(../../images/home/pizza-2.jpg);
+    flex: 0 0 50%;
+}
+.link-wrapper a{
+    text-decoration: none;
+    color: white;
+}
+.link-wrapper h1 {
+    line-height: 100px;
+    height: 75px;
+    margin: 0;
+    transition: $transition;
+  }
+
+.link-wrapper p {
+    opacity: 0;
+    margin: 0;
+    transition: $transition;
+  }
+.link-wrapper:hover h1 {
+    transform: translateY(-15px);
+  }
+
+.link-wrapper:hover p {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+
+.opening-wrapper {
+    width: 658px;
+    height: 120px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 4px;
+    background-color: #ff6b6b;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 120px;
+    margin-bottom: 6px;
+    flex: 0 0 100%;
+  }
+.opening-wrapper h1 {
+    margin: 6px 0 0 0;
+    padding: 0;
+    text-align: center;
+    transform: translateY(-20px);
+
+}
+
+.opening-wrapper h1 p {
+    margin: 0;
+    padding: 0;
+    transform: translateY(-95px);
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  /* external css: flickity.css */
+  * { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel-section {
+  max-width: 700px;
+  margin: 0 auto;
+  border-style: solid;
+  border-color: white;
+  border-radius: 4px;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+}
+
+.slider {
+    flex: 0 0 65%;
+    margin-top: 115px;
+    padding: 0;
+    width: 70%;
+    left: 30%;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.image-between {
+    flex: 0 0 25%;
+    left: 15%;
+    margin-top: 115px;
+  }
+
+  .image-between img {
+    height: 200px;
+    width: 194px;
+    object-fit: cover;
+  }
+
+  .carousel-cell h4 {
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  .carousel-cell h3 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .flickity-page-dots {
+    bottom: -50px;
+    text-align: left;
+    margin-left: 10%;
+  }
+
+/* GALLERY SECTION */
+
+.gallery-section {
+    max-width: 700px;
+    margin-top: 115px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 4px;
+  }
+
+  .gallery-image {
+    flex: 0 0 33,33333333333333;
+    width: auto;
+    position: relative;
+  }
+
+  .gallery-image img {
+    max-height: 200px;
+    max-width: 194px;
+    object-fit: cover;
+    width: 194px;
+    height: 200px;
+  }
+
+  /*.picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }*/
+
+  .icons {
+    position: absolute;
+    max-height: 200px;
+    max-width: 194px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    opacity: 0;
+    transition: .5s;
+    color: white;
+    padding: 35px;
+  }
+
+  .icons:hover {
+    align-content: space-between;
+    opacity: 1;
+  }
+
+  .icons i {
+    font-size: 30px;
+  }
+
+  .icons i:hover {
+    transition: .2s;
+    transform: scale(1.5);
+    color: red;
+  } 

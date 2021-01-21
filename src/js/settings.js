@@ -68,6 +68,7 @@ export const select = {
     bookTable: '.order-confirmation button',
     starters: '[name="starter"]',
     tableChosen: '.table.chosen',
+    orderConfirmationButton: '#order-btn',
   },
   nav: {
     links: '.main-nav a',
@@ -85,7 +86,7 @@ export const classNames = {
   booking: {
     loading: 'loading',
     tableBooked: 'booked',
-    tableChosen: 'chosen',
+    tableReserving: 'chosen',
   },
   nav: {
     active: 'active',

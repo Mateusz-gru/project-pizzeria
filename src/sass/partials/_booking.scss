@@ -38,6 +38,7 @@
   @extend .h1;
   margin: 0 0 ($base-size * 4) 0;
   text-align: center;
+  color: #9C6B4F;
 }
 
 .time-picker {
@@ -47,7 +48,7 @@
 
 .hour-picker {
   position: relative;
-  width: 50%;
+  width: 40%;
 
   .output {
     position: absolute;
@@ -63,7 +64,7 @@
 
   &__handle {
     box-shadow: none;
-    border: 0;
+    border: solid 4px #025939;
     transition-timing-function: cubic-bezier(0, 1, 0, 1);
     transition: transform 100ms;
 
@@ -80,7 +81,7 @@
   }
 
   &__fill {
-    background: $color-success;
+    background: #025939;
     transition-timing-function: cubic-bezier(0, 1, 0, 1);
     transition: width 100ms;
     box-shadow: none;
@@ -95,8 +96,8 @@
 
 .floor-plan {
   position: relative;
-  width: 320px;
-  height: 320px;
+  width: 420px;
+  height: 420px;
   border: 12px solid $color-dark;
   margin: ($base-size * 4) auto;
   background: linear-gradient(
@@ -131,7 +132,7 @@
 
   .object {
     @extend .h3;
-    background: #f7f1e3;
+    background: #9C6B4F;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -148,9 +149,19 @@
     border-width: 0 6px 0 6px;
   }
 
+  .scene {
+    left: 10px;
+    top: 0px;
+    width: 375px;
+    height: 60px;
+    line-height: 50px;
+    background-color: #025939;
+    color: white;
+  }
+
   .bar {
     left: 0;
-    bottom: 50px;
+    bottom: 30px;
     width: 100px;
     height: 50px;
     line-height: 50px;
@@ -161,7 +172,6 @@
     width: 70px;
     height: 70px;
     line-height: 70px;
-    transform: rotate(45deg);
     transform-origin: 50% 50%;
     cursor: pointer;
 
@@ -191,25 +201,41 @@
   }
 
   [data-table="1"] {
-    left: 40px;
-    top: 40px;
+    right: 300px;
+    top: 210px;
   }
 
   [data-table="2"] {
-    right: 25px;
-    top: 25px;
+    right: 150px;
+    top: 150px;
     width: 100px;
     height: 100px;
     line-height: 100px;
   }
 
   [data-table="3"] {
-    right: 40px;
-    top: 180px;
+    right: 30px;
+    top: 210px;
   }
+
+  [data-table="4"] {
+    right: 300px;
+    top: 90px;
+  }
+
+  [data-table="5"] {
+    right: 30px;
+    top: 90px;
+  }
+
 }
 
 .booking-options {
   @include flex(row, flex-start, space-between);
   margin: ($base-size * 4) auto;
+}
+
+.person-info {
+  padding: 5px 0px;
+  text-align: center;
 }

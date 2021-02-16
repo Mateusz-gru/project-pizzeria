@@ -4,9 +4,9 @@
   right: 0;
   top: $base-size;
   padding: ($base-size) ($base-size * 1.5);
-  background: $color-light;
+  background: #fff;
   border-radius: $radius;
-  color: $color-main;
+  color: #9C6B4F;
   font-size: $base-size;
   box-shadow: 0 0 $base-size rgba(0, 0, 0, 0.2);
   z-index: 9999;
@@ -30,7 +30,7 @@
   }
 
   &__total-number {
-    background: $color-main;
+    background: #9C6B4F;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -124,7 +124,7 @@
     }
 
     a {
-      color: $color-main;
+      color: #9C6B4F;
 
       &:hover {
         color: lighten($color-main, 3%);

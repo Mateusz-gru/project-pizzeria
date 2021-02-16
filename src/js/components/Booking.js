@@ -205,6 +205,7 @@ export class Booking {
       table: parseInt(thisBooking.tableSelected),
       duration: parseInt(thisBooking.hoursAmount.value),
       ppl: parseInt(thisBooking.peopleAmount.value),
+      food: parseInt(thisBooking.foodAmount.value),
       starters: [],
       phone: parseInt(thisBooking.dom.phone.value),
       email: thisBooking.dom.email.value,
@@ -287,6 +288,7 @@ export class Booking {
     thisBooking.dom.wrapper.innerHTML = generatedHTML;
     /* save to thisBooking.dom.peopleAmount single element found in wrapper and equal to select.booking.peopleAmount */
     thisBooking.dom.peopleAmount = thisBooking.dom.wrapper.querySelector(select.booking.peopleAmount);
+    thisBooking.dom.foodAmount = thisBooking.dom.wrapper.querySelector(select.booking.foodAmount);
     /* save to thisBooking.dom.hoursAmount single element found in wrapper and equal to select.booking.hoursAmount */
     thisBooking.dom.hoursAmount = thisBooking.dom.wrapper.querySelector(select.booking.hoursAmount);
 
@@ -305,6 +307,7 @@ export class Booking {
 
     /*create properties of thisBooking with new AmountWidget(thisBooking.dom.x)*/
     thisBooking.peopleAmount = new AmountWidget(thisBooking.dom.peopleAmount);
+    thisBooking.foodAmount = new AmountWidget(thisBooking.dom.foodAmount);
     thisBooking.hoursAmount = new AmountWidget(thisBooking.dom.hoursAmount);
     thisBooking.datePicker = new DatePicker(thisBooking.dom.datePicker);
     thisBooking.hourPicker = new HourPicker(thisBooking.dom.hourPicker);

@@ -6,6 +6,31 @@
   border-radius: 4px;
 }
 
+.section1 {
+  text-align: center;
+  font-size: 40px;
+  color: #0b0b0b;
+  margin-bottom: -80px;
+  border: #0b0b0b 2px solid;
+}
+
+.section2 {
+  text-align: center;
+  font-size: 40px;
+  color: #0b0b0b;
+  margin-bottom: -80px;
+  margin-top: 80px;
+  border: #0b0b0b 2px solid;
+}
+
+.section3 {
+  text-align: center;
+  font-size: 40px;
+  color: #0b0b0b;
+  margin-bottom: 40px;
+  border: #0b0b0b 2px solid;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -24,12 +49,12 @@
 }
 
 .order-link {
-  background-image: url(../../images/home/pizza-1.jpg);
+  background-image: url(../../images/home/pizza-2.jpg);
   flex: 0 0 50%;
 }
 
 .booking-link {
-  background-image: url(../../images/home/pizza-2.jpg);
+  background-image: url(../../images/home/event-2.jpg);
   flex: 0 0 50%;
 }
 
@@ -50,6 +75,7 @@
   margin: 0;
   transition: $transition;
 }
+
 .link-wrapper:hover h1 {
   transform: translateY(-15px);
 }
@@ -65,7 +91,7 @@
   border-style: solid;
   border-color: white;
   border-radius: 4px;
-  background-color: #ff6b6b;
+  background-color: #9c6b4f;
   margin: 0 auto;
   text-align: center;
   color: white;
@@ -75,19 +101,27 @@
   margin-bottom: 6px;
   flex: 0 0 100%;
 }
+
 .opening-wrapper h1 {
-  margin: 6px 0 0 0;
+  margin: 12px 0 0 0;
   padding: 0;
   text-align: center;
   transform: translateY(-20px);
 }
 
-.opening-wrapper h1 p {
+.opening-wrapper h1 span {
   margin: 0;
   padding: 0;
   transform: translateY(-95px);
   font-weight: 300;
   font-size: 14px;
+}
+
+a.phone {
+  color: #00cca7;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: #9c6b4f;
 }
 
 /* external css: flickity.css */
@@ -147,7 +181,7 @@ body {
 
 .carousel-cell h4 {
   font-style: italic;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .carousel-cell h3 {
@@ -159,6 +193,10 @@ body {
   bottom: -50px;
   text-align: left;
   margin-left: 10%;
+}
+
+.flickity-page-dots .dot {
+  background: #9c6b4f;
 }
 
 /* GALLERY SECTION */
@@ -216,5 +254,134 @@ body {
 .icons i:hover {
   transition: 0.2s;
   transform: scale(1.5);
-  color: red;
+  color: #00cca7;
+}
+
+/* CONTACT FORM */
+
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  margin: 3rem auto;
+  font-family: sans-serif;
+  max-width: 40rem;
+}
+
+.form .form-row {
+  margin-bottom: 1rem;
+}
+
+.form .form-row:last-child {
+  margin-bottom: 0;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea,
+.form .checkbox-cnt .state {
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.07);
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  border-radius: 0.2rem;
+  font-family: sans-serif;
+  padding: 0.8rem;
+  border: 1px solid #aaa;
+  display: block;
+  width: 100%;
+  color: #666;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  border-color: #9c6b4f;
+  box-shadow: inset 0 0 0 1px #9c6b4f, inset 0 1px 5px rgba(0, 0, 0, 0.07);
+  outline: none;
+}
+
+.form textarea {
+  height: 10rem;
+}
+
+.form label {
+  font-weight: bold;
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.form .submit-btn {
+  font-family: sans-serif;
+  padding: 1rem 2rem;
+  background: #00cca7;
+  border: 0;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: 0.3s background-color;
+}
+
+/* checkbox */
+
+.form .submit-btn:hover {
+  background: #9c6b4f;
+}
+
+.form .checkbox-cnt {
+  padding-left: 3rem;
+  position: relative;
+  font-weight: normal;
+  font-size: 0.85rem;
+  line-height: 1.1rem;
+  color: #444;
+  cursor: pointer;
+}
+
+.form .checkbox-cnt .state {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #aaa;
+  border-radius: 0.2rem;
+}
+
+.form .checkbox-cnt .state:before {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.2rem;
+  background: #9c6b4f;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: "";
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+
+.form .checkbox-cnt input:checked ~ .state:before {
+  animation: checkboxShowAnim 0.5s 1;
+  opacity: 1;
+}
+
+.form .checkbox-cnt input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  z-index: 2;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
 }

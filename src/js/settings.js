@@ -61,6 +61,7 @@ export const select = {
   },
   booking: {
     peopleAmount: '.people-amount',
+    foodAmount: '.food-amount',
     hoursAmount: '.hours-amount',
     tables: '.floor-plan .table',
     phone: '.order-confirmation .tel',
@@ -98,7 +99,7 @@ export const classNames = {
 
 export const settings = {
   hours: {
-    open: 12,
+    open: 10,
     close: 24,
   },
   amountWidget: {
@@ -107,7 +108,7 @@ export const settings = {
     defaultMax: 9,
   },
   datePicker: {
-    maxDaysInFuture: 140,
+    maxDaysInFuture: 210,
   },
   cart: {
     defaultDeliveryFee: 20,

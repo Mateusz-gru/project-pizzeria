@@ -1,6 +1,6 @@
 .header {
   padding: ($base-size * 5) 0 ($base-size * 8) 0;
-  background: $color-dark;
+  background-image: url(../../images/head.jpg);
   color: $color-light;
 
   &__wrapper {
@@ -27,10 +27,11 @@
   }
 
   &__subtitle {
-    margin: 0;
-    font-size: ($base-size * 1.5);
+    margin: 0 120px;
+    font-size: ($base-size * 2);
     font-weight: $font-light;
     font-style: italic;
+    text-align: center;
   }
 
 }
@@ -42,14 +43,14 @@
 
   a {
     @extend .h2;
-    color: $color-main;
+    color: #00CCA7;
     text-decoration: none;
     margin-right: ($base-size * 2);
     text-align: center;
     padding: $base-size ($base-size * 2);
     background: darken($color-dark, 5%);
-    border-top-left-radius: $radius;
-    border-top-right-radius: $radius;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 
     &.active {
       background: lighten($color-dark, 75%);

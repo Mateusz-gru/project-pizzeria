@@ -24,7 +24,7 @@
 
   &__icon {
     position: absolute;
-    color: $color-main;
+    color: #9C6B4F;
     right: (-$base-size * 5);
     top: $base-size;
     font-size: ($base-size * 1.5);
@@ -66,7 +66,7 @@
   &__total-price {
     font-size: 14px;
     font-weight: $font-bold;
-    text-transform: uppercase;
+
   }
 
   &__images {

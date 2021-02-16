@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Pizzeria</title>
+  <title>TASTEART - Teatr i restauracja w jednym miejscu.</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,300i,700%7COswald:300,500,700&amp;subset=latin-ext"
     rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
@@ -22,18 +22,20 @@
     <div class="container">
       <div class="header__wrapper">
         <div class="logo">
-          <h1 class="logo__title"><span>Mamma</span>Mia!</h1>
-          <h2 class="logo__subtitle">the best homemade Italian food</h2>
+          <img src="images/home/logo.png" alt="logo">
+          <h2 class="logo__subtitle">Teart i restauracja w jednym miejscu.</h2>
+          <h3 class="logo__subtitle"><b><br>Przekonaj się jak smakuje sztuka!</b></h3>
         </div>
         <div class="main-nav">
-          <a href="#home">Home</a>
-          <a href="#order">Order</a>
-          <a href="#booking">Booking</a>
+          <a href="#home">Strona główna</a>
+          <a href="#order">Zamów</a>
+          <a href="#booking">Rezerwacja</a>
+          <a href="#about">O nas</a>
         </div>
         <div id="cart" class="cart">
           <div class="cart__summary">
             <span class="cart__total-number">0</span>
-            <span class="cart__total-price">Total price: $<strong>0</strong></span>
+            <span class="cart__total-price">Kwota zamówienia: <strong>0</strong> zł</span>
             <i class="fas fa-chevron-down"></i>
             <i class="fas fa-shopping-cart cart__icon"></i>
           </div>
@@ -43,22 +45,23 @@
               </ul>
               <ul class="cart__order-price">
                 <li class="cart__order-subtotal">
-                  <span class="cart__order-price-name">Subtotal:</span>
-                  <span class="cart__order-price-sum">$<strong>0</strong></span>
+                  <span class="cart__order-price-name">Koszt produktów:</span>
+                  <span class="cart__order-price-sum"><strong>0</strong> zł</span>
                 </li>
                 <li class="cart__order-delivery">
-                  <span class="cart__order-price-name">Delivery:</span>
-                  <span class="cart__order-price-sum">$<strong>0</strong></span>
+                  <span class="cart__order-price-name">Dostawa:</span>
+                  <span class="cart__order-price-sum"><strong>0</strong> zł</span>
                 </li>
                 <li class="cart__order-total">
-                  <span class="cart__order-price-name"><strong>Total:</strong></span>
-                  <span class="cart__order-price-sum">$<strong>0</strong></span>
+                  <span class="cart__order-price-name"><strong>Suma:</strong></span>
+                  <span class="cart__order-price-sum"><strong>0</strong> zł</span>
                 </li>
               </ul>
               <div class="cart__order-confirmation">
-                <input type="tel" name="phone" placeholder="Your phone">
-                <input type="text" name="address" placeholder="Your address">
-                <button type="submit" class="btn-secondary">Order</button>
+                <input type="tel" name="phone" placeholder="Numer telefonu">
+                <input type="email" name="email" placeholder="Adres e-mail">
+                <input type="text" name="address" placeholder="Adres wysyłki">
+                <button type="submit" class="btn-secondary">Zamów</button>
               </div>
             </form>
           </div>
@@ -73,65 +76,62 @@
         <div class="row">
           <div class="link-wrapper order-link">
             <a href="#order" class="link">
-              <h1 class="h1">ORDER ONLINE</h1>
-              <p>Delicious pizza delivered to your home</p>
+              <h1 class="h1">Złóz Zamówienie</h1>
+              <span>Zobacz co poleca nasz Szef Kuchni!</span>
             </a>
           </div>
           <div class="link-wrapper booking-link">
             <a href="#booking" class="link">
-              <h1 class="h1">BOOK A TABLE</h5>
-                <p>There's always more fun together</p>
+              <h1 class="h1">Zarezerwuj stolik</h1>
+                <span>Rezerwacja stolików na wydarzenia kulturalne</span>
             </a>
           </div>
           <div class="container opening-wrapper">
-            <h1>OPENING HOURS:
-              <p>TUE-SUN, 12PM-12AM</p>
+            <h1>Zadzwoń do nas:
+              <span><a class="phone" href="tel:+48123456789">+48 123 456 789</a></span>
             </h1>
           </div>
         </div>
 
         <article class="carousel-section">
+          <h1 class="section1">Wydarzenia kulturalne:</h1>
           <div class="row">
             <div class="image-between">
-              <img src="images/home/pizza-3.jpg" alt="pizzeria">
+              <img src="images/home/event.jpg" alt="event">
             </div>
             <div class="slider">
               <div class="carousel" data-flickity='{ "autoPlay": true, "prevNextButtons": false }'>
                 <div class="carousel-cell">
-                  <h3>Amazing service!</h3>
+                  <h3>Skrzypek na dachu</h3>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's.
+                    Skrzypek na dachu jest musicalem z muzyką Jerry’ego Bocka, tekstem Sheldona Harnicka i librettem Josepha Steina. Historia jest luźno oparta na cyklu powieści i opowiadań Szolema Alejchema.
                   </p>
-                  <h4> - Margaret Osborne</h4>
+                  <h4> - 12.03.2021r.</h4>
                 </div>
                 <div class="carousel-cell">
-                  <h3>Super taste.</h3>
+                  <h3>Krzysztof Zalewski</h3>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    Aenean quis nisl ante.
+                    Zapraszamy na trasę promującą najnowszy album Krzysztofa Zalewskiego „Zabawa”. Artysta pojawi się w Warszawie, Łodzi, we Wrocławiu, w Katowicach, Gdańsku, Krakowie i Poznaniu.
                   </p>
-                  <h4> - Justin Biber</h4>
+                  <h4> - 26.04.2021r.</h4>
                 </div>
                 <div class="carousel-cell">
-                  <h3>My favorite!</h3>
+                  <h3>Stromae</h3>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    Aenean quis nisl ante. Deus meus!
+                    Stromae, dawniej Opmaestro, właśc. Paul Van Haver – belgijski piosenkarz pochodzenia rwandyjskiego, producent muzyczny, autor tekstów i przedsiębiorca.
                   </p>
-                  <h4> - Stephen Howking</h4>
+                  <h4> - 05.05.2021r.</h4>
                 </div>
               </div>
             </div>
           </div>
         </article>
+        <h1 class="section2">Galeria wydarzeń:</h1>
         <article class="gallery-section">
           <div class="row">
             <div class="gallery-image">
               <div class="picture">
-                <img src="images/home/pizza-4.jpg">
+                <img src="images/home/pizza-4.jpg" alt="pizzeria">
               </div>
               <div class="icons">
                 <i class="fas fa-heart"></i>
@@ -140,7 +140,7 @@
             </div>
             <div class="gallery-image">
               <div class="picture">
-                <img src="images/home/pizza-5.jpg">
+                <img src="images/home/pizza-5.jpg" alt="pizzeria">
               </div>
               <div class="icons">
                 <i class="fas fa-heart"></i>
@@ -149,7 +149,7 @@
             </div>
             <div class="gallery-image">
               <div class="picture">
-                <img src="images/home/pizza-6.jpg">
+                <img src="images/home/pizza-6.jpg" alt="pizzeria">
               </div>
               <div class="icons">
                 <i class="fas fa-heart"></i>
@@ -158,7 +158,7 @@
             </div>
             <div class="gallery-image">
               <div class="picture">
-                <img src="images/home/pizza-7.jpg">
+                <img src="images/home/pizza-7.jpg" alt="pizzeria">
               </div>
               <div class="icons">
                 <i class="fas fa-heart"></i>
@@ -167,7 +167,7 @@
             </div>
             <div class="gallery-image">
               <div class="picture">
-                <img src="images/home/pizza-8.jpg">
+                <img src="images/home/pizza-8.jpg" alt="pizzeria">
               </div>
               <div class="icons">
                 <i class="fas fa-heart"></i>
@@ -176,7 +176,7 @@
             </div>
             <div class="gallery-image">
               <div class="picture">
-                <img src="images/home/pizza-9.jpg">
+                <img src="images/home/pizza-9.jpg" alt="pizzeria">
               </div>
               <div class="icons">
                 <i class="fas fa-heart"></i>
@@ -185,8 +185,95 @@
             </div>
           </div>
         </article>
+        <h1 class="section1">Galeria dań:</h1>
+        <article class="gallery-section">
+          <div class="row">
+            <div class="gallery-image">
+              <div class="picture">
+                <img src="images/home/pizza-4.jpg" alt="pizzeria">
+              </div>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+              </div>
+            </div>
+            <div class="gallery-image">
+              <div class="picture">
+                <img src="images/home/pizza-5.jpg" alt="pizzeria">
+              </div>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+              </div>
+            </div>
+            <div class="gallery-image">
+              <div class="picture">
+                <img src="images/home/pizza-6.jpg" alt="pizzeria">
+              </div>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+              </div>
+            </div>
+            <div class="gallery-image">
+              <div class="picture">
+                <img src="images/home/pizza-7.jpg" alt="pizzeria">
+              </div>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+              </div>
+            </div>
+            <div class="gallery-image">
+              <div class="picture">
+                <img src="images/home/pizza-8.jpg" alt="pizzeria">
+              </div>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+              </div>
+            </div>
+            <div class="gallery-image">
+              <div class="picture">
+                <img src="images/home/pizza-9.jpg" alt="pizzeria">
+              </div>
+              <div class="icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+              </div>
+            </div>
+          </div>
+        </article>
+        <h1 class="section3">Napisz do nas:</h1>
+        <form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
+          <div class="form-row">
+              <label for="field-name">Imię*</label>
+              <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+          </div>
+          <div class="form-row">
+              <label for="field-email">E-mail*</label>
+              <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+          </div>
+          <div class="form-row">
+              <label for="field-message">Treść wiadomości*</label>
+              <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+          </div>
+          <div class="form-row">
+              <label class="checkbox-cnt">
+                  <input type="checkbox" data-error="Musisz wypełnić pole" name="regulation">
+                  <i class="state" aria-hidden="true"></i>
+                  <span>Wyrazam zgodę na wykostanie moich danych w celach marketingowych. Akceptuję politykę prywatności.</span>
+              </label>
+          </div>
+          <div class="form-row">
+              <button type="submit" class="submit-btn">
+                  Wyślij
+              </button>
+          </div>
+      </form>
       </div>
     </section>
+    
     <section id="order">
       <div id="product-list" class="product-list container"></div>
     </section>
@@ -197,29 +284,32 @@
 
   <script id="template-booking-widget" type="text/x-handlebars-template">
     <div class="booking-widget">
-      <h2 class="page__title no-spacing">Book a table</h2>
+      <h2 class="page__title no-spacing">Zarezerwuj stolik</h2>
       <form class="booking-form">
         <div class="time-picker">
           <div class="date-picker">
-            <label class="booking-option-title">Pick a date</label>
+            <label class="booking-option-title">Wybierz datę</label>
             <input type="text" name="date">
           </div>
           <div class="hour-picker range-slider">
               <div class="output"></div>
-              <label class="booking-option-title">Pick a time</label>
-            <input type="range" name="hour" value="12" min="12" max="24" step="0.5">
+              <label class="booking-option-title">Wybierz godzinę</label>
+            <input type="range" name="hour" value="12" min="10" max="24" step="0.5">
           </div>
         </div>
         <div class="floor-plan">
-          <div class="object entry">entry</div>
+          <div class="object entry">Wejście</div>
           <div class="object bar">bar</div>
-          <div class="object table" data-table="1">table-1</div>
-          <div class="object table table--round" data-table="2">table-2</div>
-          <div class="object table" data-table="3">table-3</div>
+          <div class="object scene">scena</div>
+          <div class="object table" data-table="1">stół 1</div>
+          <div class="object table table--round" data-table="2">stół 2</div>
+          <div class="object table" data-table="3">stół 3</div>
+          <div class="object table" data-table="4">stół 4</div>
+          <div class="object table" data-table="5">stół 5</div>
         </div>
         <div class="booking-options"> <!-- options -->
           <label class="booking-option-title"> <!-- option-row -->
-            People
+            Liczba osób
             <div class="widget-amount people-amount"> <!-- widget-amount -->
               <a class="btn-quantity" href="#less"><i class="fas fa-minus"></i></a>
               <input class="amount" type="text" name="people" value="1">
@@ -227,7 +317,15 @@
             </div>
           </label>
           <label class="booking-option-title"> <!-- option-row -->
-            Hours
+            Liczba posiłków
+            <div class="widget-amount food-amount"> <!-- widget-amount -->
+              <a class="btn-quantity" href="#less"><i class="fas fa-minus"></i></a>
+              <input class="amount" type="text" name="people" value="1">
+              <a class="btn-quantity" href="#more"><i class="fas fa-plus"></i></a>
+            </div>
+          </label>
+          <label class="booking-option-title"> <!-- option-row -->
+            Czas rezerwacji
             <div class="widget-amount hours-amount"> <!-- widget-amount -->
               <a class="btn-quantity" href="#less"><i class="fas fa-minus"></i></a>
               <input class="amount" type="number" name="hours" value="1" step="0.5" min="0.5">
@@ -235,27 +333,36 @@
             </div>
           </label>
           <div> <!-- option-row -->
-            <span class="booking-option-title">Starters</span>
+            <span class="booking-option-title">Startery</span>
             <div class="checkbox"> <!-- checkbox -->
               <label>
                 <input type="checkbox" name="starter" value="water">
                 <span class="checkbox__checkmark"></span>
-                Water
+                Woda
               </label>
             </div>
             <div class="checkbox"> <!-- checkbox -->
               <label>
                 <input type="checkbox" name="starter" value="bread">
                 <span class="checkbox__checkmark"></span>
-                Bread
+                Pieczywo
+              </label>
+            </div>
+            <div class="checkbox"> <!-- checkbox -->
+              <label>
+                <input type="checkbox" name="starter" value="bread">
+                <span class="checkbox__checkmark"></span>
+                Warzywa peklowane
               </label>
             </div>
           </div>
         </div>
         <div class="order-confirmation">
-          <input type="tel" name="phone" placeholder="Your phone">
-          <input type="text" name="address" placeholder="Your address">
-          <button type="submit" class="btn-secondary" id="booking-button">Book table</button>
+          <input class="person-info" type="text" name="text" placeholder="Imię">
+          <input class="person-info" type="tel" name="phone" placeholder="Numer telefonu">
+          <input class="person-info" type="email" name="email" placeholder="Adres e-mail">
+          <input class="person-info" type="text" name="text" placeholder="Kod rabatowy">
+          <button type="submit" class="btn-reservation" id="booking-button">Rezerwacja</button>
         </div>
       </form>
     </div>
@@ -270,7 +377,7 @@
         <div class="cart__product">
           <div class="cart__product-header">
             <span>{{ name }}</span>
-            <span>$<strong class="cart__product-price">{{ price }}</strong></span>
+            <span><strong class="cart__product-price">{{ price }}</strong> zł</span>
           </div>
           <ul class="cart__product-details no-spacing">
             {{#each params}}
@@ -293,7 +400,7 @@
     <article class="product"> <!-- product -->
         <header class="product__header">
           <h3 class="product__name no-spacing">{{ name }} <i class="fas fa-chevron-down product__icon"></i></h3>
-          <p class="product__base-price no-spacing">${{ price }}</p>
+          <p class="product__base-price no-spacing">{{ price }} zł</p>
         </header>
         <div class="product__description"> <!-- description -->
           <p>{{{ description }}}</p>
@@ -310,7 +417,7 @@
                   <label>
                     <input type="checkbox" name="{{ paramId }}" value="{{ @key }}" id="{{ @key }}" {{#if default}}checked{{/if}}>
                     <span class="checkbox__checkmark"></span>
-                    {{{ label }}} (${{{ price }}})
+                    {{{ label }}} ({{{ price }}} zł)
                   </label>
                 </div>
                 {{/each}}
@@ -322,7 +429,7 @@
                 {{#each options}}
                 <div class="checkbox checkbox--round"> <!-- radio -->
                   <label>
-                    {{{ label }}} (${{{ price }}})
+                    {{{ label }}} ({{{ price }}} zł)
                     <input type="radio" name="{{ paramId }}" value="{{ @key }}" id="{{ @key }}" {{#if default}}checked{{/if}}>
                     <span class="checkbox__checkmark"></span>
                   </label>
@@ -335,7 +442,7 @@
                 <h3 class="product__params-title">{{{ label }}}</h3>
                 <select name="{{ paramId }}">
                   {{#each options}}
-                  <option value="{{ @key }}" {{#if default}}selected{{/if}}>{{{ label }}} (${{{ price }}})</option>
+                  <option value="{{ @key }}" {{#if default}}selected{{/if}}>{{{ label }}} ({{{ price }}} zł)</option>
                   {{/each}}
                 </select>
               </li>
@@ -344,16 +451,16 @@
             </ul>
             <div class="amount"> <!-- controls -->
               <div class="widget-amount"> <!-- widget-amount -->
-                <h3 class="product__params-title">Select quantity</h3>
+                <h3 class="product__params-title">Wybierz ilość</h3>
                 <a class="btn-quantity" href="#less"><i class="fas fa-minus"></i></a>
                 <input type="text" class="amount">
                 <a class="btn-quantity" href="#more"><i class="fas fa-plus"></i></a>
               </div>
               <p class="product__total-price">
-                Total: $<span class="price">{{{ price }}}</span>
+                Suma: <span class="price">{{{ price }}}</span> zł
               </p>
               <div> <!-- add-to-cart -->
-                <a class="btn-primary" href="#add-to-cart">Add to cart</a>
+                <a class="btn-primary" href="#add-to-cart">Dodaj do koszyka</a>
               </div>
             </div>
           </form>
@@ -373,5 +480,25 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="js/app.js" type="module"></script>
 </body>
+<footer class="footer">
+  <div class="container1">
+    <div class="wrapper">
+      <section class="footerinfo">
+        <h3 class="adress">Adres:</h3>
+          <p>ul. Puławska 44/65<br>01-2626 Warszawa</p>
+      </section>
+      <section class="footerinfo">
+        <img src="images/home/logo.png" alt="logo">
+      </section>
+      <section class="social-media">
+        <ul>
+            <li><i class="fab fa-facebook-f"></i>Facebook</li>
+            <li><i class="fab fa-instagram"></i>Instagram</li>
+            <li><i class="fab fa-linkedin-in"></i>Linkedin</li>
+        </ul>
+      </section>
+    <div>
+  </div>
+</footer>
 
 </html>

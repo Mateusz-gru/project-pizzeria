@@ -9,10 +9,7 @@ class Cart {
     thisCart.deliveryFee = settings.cart.defaultDeliveryFee;
     thisCart.getElements(element);
     thisCart.initActions();
-    // thisCart.update();
-    // thisCart.add(menuProduct);
-
-    //console.log('new Cart', thisCart);
+    
   }
 
   getElements(element) {
@@ -32,7 +29,6 @@ class Cart {
       thisCart.dom[key] = thisCart.dom.wrapper.querySelectorAll(select.cart[key]);  
     }
 
-    // console.log('thisCart.dom.toggleTrigger', thisCart.dom.toggleTrigger);
   }
 
   initActions() {
@@ -103,10 +99,8 @@ class Cart {
     const cartContainer= document.querySelector(select.cart.productList);
     cartContainer.appendChild(generatedDOM);
 
-    // console.log('adding product', menuProduct);
 
     thisCart.products.push(new CartProduct(menuProduct, generatedDOM));
-    // console.log('thisCart.products', thisCart.products);
     thisCart.update();
   }
 

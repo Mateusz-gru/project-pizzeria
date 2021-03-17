@@ -37,7 +37,6 @@ export class Booking {
         endDateParam,
       ],
     };
-    //console.log('getData params', params);
 
     const urls = {
       booking: settings.db.url + '/' + settings.db.booking
@@ -47,7 +46,6 @@ export class Booking {
       eventsRepeat: settings.db.url + '/' + settings.db.event
         + '?' + params.eventsRepeat.join('&'),
     };
-    //console.log('getData urls', urls);
 
 
     Promise.all([
@@ -67,9 +65,6 @@ export class Booking {
         ]);
       })
       .then(function ([bookings, eventsCurrent, eventsRepeat]) {
-        // console.log('bookings', bookings);
-        //console.log('eventsCurrent', eventsCurrent);
-        //console.log('eventsRepeat', eventsRepeat);
         thisBooking.parseData(bookings, eventsCurrent, eventsRepeat);
       });
   }
@@ -97,7 +92,6 @@ export class Booking {
       }
     }
 
-    //console.log('thisBooking.booked', thisBooking.booked);
     thisBooking.updateDOM();
 
   }
@@ -109,7 +103,6 @@ export class Booking {
     }
     const startHour = utils.hourToNumber(hour);
     for (let hourBlock = startHour; hourBlock < startHour + duration; hourBlock += 0.5) {
-      //console.log('loop', hourBlock);
       if (typeof thisBooking.booked[date][hourBlock] == 'undefined') {
         thisBooking.booked[date][hourBlock] = [];
       }
@@ -187,10 +180,12 @@ export class Booking {
 
     for (let timePeriod = thisHour; timePeriod < thisHour + thisBooking.hoursAmount.value; timePeriod += 0.5) {
 
-      if (thisBooking.booked[thisBooking.date][timePeriod].includes(tableId)) {
-        bookingButton.disabled = true;
-        alert('THis table is already booked');
-        return;
+      if (thisBooking.booked[thisBooking.date][timePeriod]) {
+        if (thisBooking.booked[thisBooking.date][timePeriod].includes(tableId)) {
+          bookingButton.disabled = true;
+          alert('THis table is already booked');
+          return;
+        }
       }
     }
   }

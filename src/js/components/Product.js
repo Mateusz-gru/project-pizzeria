@@ -16,8 +16,6 @@ class Product {
     thisProduct.initOrderForm();
     thisProduct.initAmountWidget();
     thisProduct.processOrder();
-
-    //console.log('new Product:', thisProduct);
   }
   
 
@@ -91,7 +89,6 @@ class Product {
   initOrderForm() {
 
     const thisProduct = this;
-    //console.log('initOrderForm', thisProduct);
 
     thisProduct.form.addEventListener('submit', function (event) {
       event.preventDefault();
@@ -115,26 +112,20 @@ class Product {
   processOrder() {
 
     const thisProduct = this;
-    // console.log('processOrder');
 
     /* read all data from the form (using utils.serializeFormToObject) and save it to const formData */
     const formData = utils.serializeFormToObject(thisProduct.form);          // zawiera zaznaczone opcje
-    // console.log('formData', formData);
     thisProduct.params ={};
     /* set variable price to equal thisProduct.data.price */
     let price = thisProduct.data.price;
-    // console.log(price);
     /* START LOOP: for each paramId in thisProduct.data.params */
     for (let paramId in thisProduct.data.params) {
       /* save the element in thisProduct.data.params with key paramId as const param */
       const param = thisProduct.data.params[paramId];
-      // console.log(param);
       /* START LOOP: for each optionId in param.options */
       for (let optionId in param.options) {
-        // console.log(optionId);
         /* save the element in param.options with key optionId as const option */
         const option = param.options[optionId];
-        // console.log(option);
         /* START IF: if option is selected and option is not default */
         const optionSelected = formData.hasOwnProperty(paramId) && formData[paramId].indexOf(optionId) > -1;
         if (optionSelected && !option.default) {
@@ -180,7 +171,6 @@ class Product {
     /* set the contents of thisProduct.priceElem to be the value of variable price */
     thisProduct.priceElem.innerHTML = thisProduct.price;
 
-    //console.log('thisProduct.params', thisProduct.params);
   }
 
   initAmountWidget() {
